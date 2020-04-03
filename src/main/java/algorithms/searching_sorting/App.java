@@ -1,4 +1,4 @@
-package java.algorithms;
+package algorithms.searching_sorting;
 
 /**
  * Hello world!
