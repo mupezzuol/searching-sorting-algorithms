@@ -7,7 +7,7 @@ Implementation of search and ordering algorithms.
 - [Searching Algorithms](#searching)
 - [Sorting Algorithms](#sorting)
 
-## Searching Algorithms <a name="searching"></a>:heart:
+## Searching Algorithms <a name="searching"></a>:mag_right:
 
 #### Search Default
 
@@ -25,6 +25,6 @@ public int searchDefault(Car[] cars, int beginPosition, int endPosition) {
 }
 ```
 
-## Sorting Algorithms <a name="sorting"></a>:heart:
+## Sorting Algorithms <a name="sorting"></a>:1234:
 
 - in progress...
