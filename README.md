@@ -1,15 +1,18 @@
-# Java Algorithms
+# Java Algorithms - Searching and Sorting
 
 Implementation of search and ordering algorithms.
 
 ## Index :pushpin:
 
-- [Searching Algorithms](#searchingAlgorithms)
-- [Sorting Algorithms](#sortingAlgorithms)
+- [Searching Algorithms](#searching)
+- [Sorting Algorithms](#sorting)
 
-## Searching Algorithms <a name="searchingAlgorithms"></a>:heart:
+## Searching Algorithms <a name="searching"></a>:heart:
 
-- Search Default
+#### Search Default
+
+- Descriptions in progress...
+
 ```java
 public int searchDefault(Car[] cars, int beginPosition, int endPosition) {
 	int cheaper = beginPosition;
@@ -22,6 +25,6 @@ public int searchDefault(Car[] cars, int beginPosition, int endPosition) {
 }
 ```
 
-## Sorting Algorithms <a name="searchingAlgorithms"></a>:heart:
+## Sorting Algorithms <a name="sorting"></a>:heart:
 
 - in progress...
