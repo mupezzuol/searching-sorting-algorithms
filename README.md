@@ -15,13 +15,13 @@ Implementation of search and ordering algorithms.
 
 ```java
 public int searchLowestValue(Car[] cars, int beginPosition, int endPosition) {
- int cheaper = beginPosition;
- for (int current = beginPosition; current <= endPosition; current++) {
-   if (cars[current].getPrice() < cars[cheaper].getPrice()) {
-     cheaper = current;
+    int cheaper = beginPosition;
+    for (int current = beginPosition; current <= endPosition; current++) {
+        if (cars[current].getPrice() < cars[cheaper].getPrice()) {
+            cheaper = current;
+        }
     }
-  }
- return cheaper;
+    return cheaper;
 }
 ```
 
@@ -31,10 +31,10 @@ public int searchLowestValue(Car[] cars, int beginPosition, int endPosition) {
 
 ```java
 public void changePosition(Car[] cars, int first, int second){
-	Car firstCar = cars[first];
-	Car secondCar = cars[second];
-	cars[first] = secondCar;
-	cars[second] = firstCar;
+    Car firstCar = cars[first];
+    Car secondCar = cars[second];
+    cars[first] = secondCar;
+    cars[second] = firstCar;
 }
 ```
 
@@ -48,12 +48,12 @@ public void changePosition(Car[] cars, int first, int second){
 
 ```java
 public Car[] selectionSort(Car[] cars, int numberOfElements) {
-	ISearchCar searchCar = new SearchCar();
-	for (int current = 0; current < numberOfElements - 1; current++) {
-		int lowestValue = searchCar.searchLowestValue(cars, current, numberOfElements - 1);
-		changePosition(cars, current, lowestValue);
-	}
-	return cars;
+    ISearchCar searchCar = new SearchCar();
+    for (int current = 0; current < numberOfElements - 1; current++) {
+        int lowestValue = searchCar.searchLowestValue(cars, current, numberOfElements - 1);
+        changePosition(cars, current, lowestValue);
+    }
+    return cars;
 }
 ```
 
@@ -63,13 +63,13 @@ public Car[] selectionSort(Car[] cars, int numberOfElements) {
 
 ```java
 public Car[] insertionSort(Car[] cars, int numberOfElements) {
-	for(int current = 1; current < numberOfElements; current++){
-		int analyze = current;
-		while (analyze > 0 && cars[analyze].getPrice() < cars[analyze-1].getPrice()){
-			changePosition(cars, analyze, analyze-1);
-			analyze--;
-		}
-	}
-	return cars;
+    for(int current = 1; current < numberOfElements; current++){
+        int analyze = current;
+        while (analyze > 0 && cars[analyze].getPrice() < cars[analyze-1].getPrice()){
+            changePosition(cars, analyze, analyze-1);
+            analyze--;
+        }
+    }
+    return cars;
 }
 ```
