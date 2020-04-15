@@ -80,9 +80,23 @@ public Car[] insertionSort(Car[] cars, int numberOfElements) {
 - Below are some analyzes of the implemented algorithms._[XLSX](resources/analysis_of_algorithms.xlsx)_
 - Numbers are symbolic examples for analyzing the differences between the types of algorithms.
 
-#### Search Lowest Value
+#### Search Lowest Value - Linear
 
 - This algorithm we execute a 'for' that sweeps N elements, however we have an IF where we can also execute 2N.
 - This algorithm is a linear algorithm, because I will always double, or quadruple and there will always be a linear line.
 
 ![Search Lowest Value](resources/img/search-lowest-value.png)
+
+#### Selection Sort - Quadratic
+
+- In this algorithm, we execute a 'for' that scans N elements, however, we have a call to another algorithm (search lowest value) where it can also have the same complexity already analyzed. So in this case we have N elements raised to 2 and we can have twice that.
+- This algorithm is a quadratic algorithm, because when the number of elements increases, the operations grow in a quadratic, rather than linear way.
+
+![Search Lowest Value](resources/img/selection-sort.png)
+
+#### Insertion Sort - Quadratic
+
+- In this algorithm, we execute a 'for' that sweeps N elements, where we can make N elements to the left too, however, we have a call to another algorithm (search for the lowest value), where it can also have the same complexity already analyzed. So, in this case, we have N elements increased to 2 and we can have twice that.
+- This algorithm is a quadratic algorithm, because when the number of elements increases, the operations grow in a quadratic, rather than linear way.
+
+![Search Lowest Value](resources/img/insertion-sort.png)
