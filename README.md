@@ -15,13 +15,13 @@ Implementation of search and ordering algorithms.
 
 ```java
 public int searchLowestValue(Car[] cars, int beginPosition, int endPosition) {
-	int cheaper = beginPosition;
-	for (int current = beginPosition; current <= endPosition; current++) {
-		if (cars[current].getPrice() < cars[cheaper].getPrice()) {
-			cheaper = current;
-		}
-	}
-	return cheaper;
+ int cheaper = beginPosition;
+ for (int current = beginPosition; current <= endPosition; current++) {
+   if (cars[current].getPrice() < cars[cheaper].getPrice()) {
+     cheaper = current;
+    }
+  }
+ return cheaper;
 }
 ```
 
