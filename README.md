@@ -6,6 +6,7 @@ Implementation of search and ordering algorithms.
 
 - [Searching Algorithms](#searching)
 - [Sorting Algorithms](#sorting)
+- [Analyzing the Algorithms](#analyze)
 
 ## Searching Algorithms <a name="searching"></a>:mag_right:
 
@@ -40,7 +41,7 @@ public void changePosition(Car[] cars, int first, int second){
 
 ## Sorting Algorithms <a name="sorting"></a>:1234:
 
-- in progress...
+- Below are the ordering algorithms implemented in the project.
 
 #### Selection Sort
 
@@ -73,3 +74,15 @@ public Car[] insertionSort(Car[] cars, int numberOfElements) {
     return cars;
 }
 ```
+
+## Analyzing the Algorithms <a name="analyze"></a>:chart_with_upwards_trend:
+
+- Below are some analyzes of the implemented algorithms._[XLSX](resources/analysis_of_algorithms.xlsx)_
+- Numbers are symbolic examples for analyzing the differences between the types of algorithms.
+
+#### Search Lowest Value
+
+- This algorithm we execute a 'for' that sweeps N elements, however we have an IF where we can also execute 2N.
+- This algorithm is a linear algorithm, because I will always double, or quadruple and there will always be a linear line.
+
+![Search Lowest Value](resources/img/search-lowest-value.png)
