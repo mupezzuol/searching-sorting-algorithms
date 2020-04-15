@@ -6,6 +6,7 @@ Implementation of search and ordering algorithms.
 
 - [Searching Algorithms](#searching)
 - [Sorting Algorithms](#sorting)
+- [Tests](#tests)
 - [Analyzing the Algorithms](#analyze)
 
 ## Searching Algorithms <a name="searching"></a>:mag_right:
@@ -74,6 +75,10 @@ public Car[] insertionSort(Car[] cars, int numberOfElements) {
     return cars;
 }
 ```
+
+## Tests <a name="tests"></a>:white_check_mark:
+
+- in progress...
 
 ## Analyzing the Algorithms <a name="analyze"></a>:chart_with_upwards_trend:
 
