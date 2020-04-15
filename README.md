@@ -92,11 +92,22 @@ public Car[] insertionSort(Car[] cars, int numberOfElements) {
 - In this algorithm, we execute a 'for' that scans N elements, however, we have a call to another algorithm (search lowest value) where it can also have the same complexity already analyzed. So in this case we have N elements raised to 2 and we can have twice that.
 - This algorithm is a quadratic algorithm, because when the number of elements increases, the operations grow in a quadratic, rather than linear way.
 
-![Search Lowest Value](resources/img/selection-sort.png)
+![Selection Sort](resources/img/selection-sort.png)
 
 #### Insertion Sort - Quadratic
 
 - In this algorithm, we execute a 'for' that sweeps N elements, where we can make N elements to the left too, however, we have a call to another algorithm (search for the lowest value), where it can also have the same complexity already analyzed. So, in this case, we have N elements increased to 2 and we can have twice that.
 - This algorithm is a quadratic algorithm, because when the number of elements increases, the operations grow in a quadratic, rather than linear way.
 
-![Search Lowest Value](resources/img/insertion-sort.png)
+![Insertion Sort](resources/img/insertion-sort.png)
+
+#### Linear X Quadratic
+
+- The linear algorithm is so low that we cannot see it, because the quadratic algorithm grows absurdly fast.
+- In algorithm analysis we are always concerned with power, as it will make all the difference in the comparison.
+
+![Linear and Quadratic](resources/img/linear-quadratic.png)
+
+- Example with few elements to visualize the lines of the linear algorithm.
+
+![Linear and Quadratic - Basic](resources/img/linear-quadratic-basic.png)
