@@ -119,12 +119,12 @@ public Car[] insertionSort(Car[] cars, int numberOfElements) {
 
 #### Comparisons and Illustration
 
-- We use the letter <kbd>O</kbd> to demonstrate the complexity of an algorithm, we call this analysis `_Asymptotic Analysis_`.
+- We use the letter <kbd>O</kbd> to demonstrate the complexity of an algorithm, we call this analysis _`Asymptotic Analysis`_.
 
 Demonstration examples:
 
-- `'O'` -> Constant
-- `'O n'` -> Linear
-- `'O n^2'` -> Quadratic
-- `'O n^3'` -> Cubic
-- `'O 2n'` -> Exponential
+- `O` -> Constant
+- `O n` -> Linear
+- `O n^2` -> Quadratic
+- `O n^3` -> Cubic
+- `O 2n` -> Exponential
