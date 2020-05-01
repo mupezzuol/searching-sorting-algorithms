@@ -117,7 +117,7 @@ public Car[] insertionSort(Car[] cars, int numberOfElements) {
 
 ![Linear and Quadratic - Basic](resources/img/linear-quadratic-basic.png)
 
-#### Comparisons and Illustration
+#### Comparisons and Illustration/Demonstration
 
 - We use the letter <kbd>O</kbd> to demonstrate the complexity of an algorithm, we call this analysis _`Asymptotic Analysis`_.
 
@@ -125,6 +125,10 @@ Demonstration examples:
 
 - `O` -> Constant
 - `O n` -> Linear
-- `O n^2` -> Quadratic
-- `O n^3` -> Cubic
-- `O 2n` -> Exponential
+- `O n²` -> Quadratic
+- `O n³` -> Cubic
+- `O 2ⁿ` -> Exponential
+
+- Below are some examples of complexity of algorithms and their analysis in operations.
+
+![Compare](resources/img/compare-examples.png)
