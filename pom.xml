@@ -22,8 +22,16 @@
 
 	<!-- DEPENDENCIES -->
 	<dependencies>
+	
+		<!--  Test - Hamcrest -->
+		<dependency>
+		    <groupId>org.hamcrest</groupId>
+		    <artifactId>hamcrest-all</artifactId>
+		    <version>1.3</version>
+		    <scope>test</scope>
+		</dependency>
 
-		<!-- Test -->
+		<!-- Test - jUnit-->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -32,6 +40,5 @@
 		</dependency>
 
 	</dependencies>
-	
 	
 </project>
