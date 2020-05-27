@@ -83,6 +83,7 @@ public Car[] insertionSort(Car[] cars, int numberOfElements) {
 ## Analyzing the Algorithms <a name="analyze"></a>:chart_with_upwards_trend:
 
 - Below are some analyzes of the implemented algorithms._[XLSX](resources/analysis_of_algorithms.xlsx)_
+- Site References: _[BigO](https://www.bigocheatsheet.com)_
 - Numbers are symbolic examples for analyzing the differences between the types of algorithms.
 
 #### Search Lowest Value - Linear
