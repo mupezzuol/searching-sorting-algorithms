@@ -14,6 +14,5 @@ public class SearchCar implements ISearchCar {
 		}
 		return cheaper;
 	}
-	
 
 }
