@@ -6,7 +6,7 @@ import algorithms.searching_sorting.models.Car;
 import algorithms.searching_sorting.models.PrintCar;
 import algorithms.searching_sorting.models.SortCar;
 
-public class InsertionSort {
+public class SelectionSortMain {
 
 	public static void main(String[] args) {
 		System.out.println("------------------------- BEGIN - SelectionSort");
@@ -17,7 +17,7 @@ public class InsertionSort {
 		ISortCar sortCar = new SortCar();
 		IPrintCar printCar = new PrintCar();
 
-		cars = sortCar.insertionSort(cars, cars.length);
+		cars = sortCar.selectionSort(cars, cars.length);
 
 		printCar.printCars(cars);
 
