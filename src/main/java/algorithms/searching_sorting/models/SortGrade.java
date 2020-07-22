@@ -1,31 +1,28 @@
-package algorithms.searching_sorting.sorting;
+package algorithms.searching_sorting.models;
 
-import algorithms.searching_sorting.models.Grade;
+import algorithms.searching_sorting.interfaces.ISortGrade;
 
-public class GradeTestMain2 {
+public class SortGrade implements ISortGrade {
 
-    public static void main(String[] args) {
-        Grade[] grades = {
-                new Grade("Murillo", 4.0),
-                new Grade("Gabriella", 5.0),
-                new Grade("Raul", 8.5),
-                new Grade("Manuela", 9.0),
-                new Grade("Adriana", 3.0),
-                new Grade("Joao", 6.7),
-                new Grade("Maria", 7.0),
-                new Grade("Henrique", 9.3),
-                new Grade("Jorge", 9.4),
-                new Grade("Diego", 9.5)
-        };
+    @Override
+    public Grade[] mergeSort(Grade[] grades, int begin, int end) {
+        order(grades, begin, end);
+        return grades;
+    }
 
-        Grade[] rank = merge(grades, 0, 4, grades.length);
-
-        for (Grade grade: rank) {
-            System.out.println("Student: " + grade.getStudent() + " - " + grade.getValue());
+    @Override
+    public void order(Grade[] grades, int begin, int end) {
+        int count = end - begin;
+        if (count > 1){
+            int middle = (begin + end) / 2;
+            order(grades, begin, middle); // order first middle (recursive)
+            order(grades, middle, end); // order second middle (recursive)
+            merge(grades, begin, middle, end); // merge two parts already ordered
         }
     }
 
-    private static Grade[] merge(Grade[] grades, int begin, int middle, int end) {
+    @Override
+    public void merge(Grade[] grades, int begin, int middle, int end) {
         Grade[] result = new Grade[end - begin];
 
         int current1 = begin;
@@ -61,11 +58,10 @@ public class GradeTestMain2 {
             current2++;
         }
 
+        // rest of itens for add
         for (int count = 0; count < currentPointer; count++){
             grades[begin + count] = result[count];
         }
-
-        return grades;
     }
 
 }
