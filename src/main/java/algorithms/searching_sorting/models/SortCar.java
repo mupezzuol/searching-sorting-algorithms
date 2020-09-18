@@ -50,6 +50,4 @@ public class SortCar implements ISortCar {
         cars[second] = firstCar;
     }
 
-
-
 }

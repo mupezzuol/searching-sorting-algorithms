@@ -15,7 +15,7 @@ public class PrintCar implements IPrintCar {
 
     @Override
     public void printCar(Car car) {
-        System.out.println("Car: "+ car.getName().toString());
+        System.out.println("Car: "+ car.getName());
         System.out.println("Price: "+ car.getPrice().toString());
     }
 

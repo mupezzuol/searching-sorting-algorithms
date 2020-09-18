@@ -4,6 +4,6 @@ import algorithms.searching_sorting.models.Car;
 
 public interface ISearchCar {
 	
-	public int searchLowestValue(Car[] cars, int beginPosition, int endPosition);
+	int searchLowestValue(Car[] cars, int beginPosition, int endPosition);
 
 }

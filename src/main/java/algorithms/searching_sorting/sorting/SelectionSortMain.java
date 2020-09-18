@@ -18,7 +18,6 @@ public class SelectionSortMain {
 		IPrintCar printCar = new PrintCar();
 
 		cars = sortCar.selectionSort(cars, cars.length);
-
 		printCar.printCars(cars);
 
 		System.out.println("------------------------- END - SelectionSort");
