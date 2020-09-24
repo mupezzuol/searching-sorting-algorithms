@@ -1,6 +1,8 @@
 package algorithms.searching_sorting.merge_sort;
 
 import algorithms.searching_sorting.mock.GradeMock;
+import algorithms.searching_sorting.model.Grade;
+import algorithms.searching_sorting.print.PrintGrade;
 
 public class MergeSortMain {
 

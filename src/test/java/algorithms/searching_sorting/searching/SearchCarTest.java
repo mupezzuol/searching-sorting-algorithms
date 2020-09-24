@@ -3,8 +3,7 @@ package algorithms.searching_sorting.searching;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import algorithms.searching_sorting.insertion_selection_sort.Car;
-import algorithms.searching_sorting.searching.SearchCar;
+import algorithms.searching_sorting.model.Car;
 import org.junit.Before;
 import org.junit.Test;
 

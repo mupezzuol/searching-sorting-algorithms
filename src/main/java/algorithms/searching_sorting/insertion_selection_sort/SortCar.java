@@ -1,5 +1,6 @@
 package algorithms.searching_sorting.insertion_selection_sort;
 
+import algorithms.searching_sorting.model.Car;
 import algorithms.searching_sorting.searching.SearchCar;
 
 public class SortCar {

@@ -1,5 +1,7 @@
 package algorithms.searching_sorting.merge_sort;
 
+import algorithms.searching_sorting.model.Grade;
+
 public class SortGrade {
 
     public Grade[] mergeSort(Grade[] grades, int begin, int end) {

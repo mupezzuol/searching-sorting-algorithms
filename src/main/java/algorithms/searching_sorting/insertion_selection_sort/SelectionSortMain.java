@@ -1,6 +1,8 @@
 package algorithms.searching_sorting.insertion_selection_sort;
 
 import algorithms.searching_sorting.mock.CarMock;
+import algorithms.searching_sorting.model.Car;
+import algorithms.searching_sorting.print.PrintCar;
 
 public class SelectionSortMain {
 

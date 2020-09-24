@@ -1,8 +1,8 @@
 package algorithms.searching_sorting.searching;
 
 import algorithms.searching_sorting.mock.CarMock;
-import algorithms.searching_sorting.insertion_selection_sort.Car;
-import algorithms.searching_sorting.insertion_selection_sort.PrintCar;
+import algorithms.searching_sorting.model.Car;
+import algorithms.searching_sorting.print.PrintCar;
 
 public class SearchLowestValueMain {
 	

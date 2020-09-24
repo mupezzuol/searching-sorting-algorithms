@@ -1,5 +1,7 @@
-package algorithms.searching_sorting.insertion_selection_sort;
+package algorithms.searching_sorting.print;
 
+
+import algorithms.searching_sorting.model.Car;
 
 public class PrintCar {
 

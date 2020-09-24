@@ -1,4 +1,6 @@
-package algorithms.searching_sorting.merge_sort;
+package algorithms.searching_sorting.print;
+
+import algorithms.searching_sorting.model.Grade;
 
 public class PrintGrade {
 

@@ -1,4 +1,4 @@
-package algorithms.searching_sorting.merge_sort;
+package algorithms.searching_sorting.model;
 
 public class Grade {
 
