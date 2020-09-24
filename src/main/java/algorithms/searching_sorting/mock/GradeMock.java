@@ -1,6 +1,6 @@
 package algorithms.searching_sorting.mock;
 
-import algorithms.searching_sorting.models.Grade;
+import algorithms.searching_sorting.merge_sort.Grade;
 
 public class GradeMock {
 	

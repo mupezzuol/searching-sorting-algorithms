@@ -1,9 +1,6 @@
-package algorithms.searching_sorting.sorting;
+package algorithms.searching_sorting.merge_sort;
 
-import algorithms.searching_sorting.interfaces.IPrintGrade;
-import algorithms.searching_sorting.interfaces.ISortGrade;
 import algorithms.searching_sorting.mock.GradeMock;
-import algorithms.searching_sorting.models.*;
 
 public class MergeSortMain {
 
@@ -12,8 +9,8 @@ public class MergeSortMain {
 
         Grade grades[] = new GradeMock().getMockGrades();
 
-        ISortGrade sortGrade = new SortGrade();
-        IPrintGrade printGrade = new PrintGrade();
+        SortGrade sortGrade = new SortGrade();
+        PrintGrade printGrade = new PrintGrade();
 
         grades = sortGrade.mergeSort(grades, 0, grades.length);
         printGrade.printGrades(grades);

@@ -1,10 +1,9 @@
-package algorithms.searching_sorting.models;
+package algorithms.searching_sorting.searching;
 
-import algorithms.searching_sorting.interfaces.ISearchCar;
+import algorithms.searching_sorting.insertion_selection_sort.Car;
 
-public class SearchCar implements ISearchCar {
+public class SearchCar {
 
-	@Override
 	public int searchLowestValue(Car[] cars, int beginPosition, int endPosition) {
 		int cheaper = beginPosition;
 		for (int current = beginPosition; current <= endPosition; current++) {

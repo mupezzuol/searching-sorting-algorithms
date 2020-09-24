@@ -1,10 +1,8 @@
-package algorithms.searching_sorting.models;
+package algorithms.searching_sorting.insertion_selection_sort;
 
-import algorithms.searching_sorting.interfaces.IPrintCar;
 
-public class PrintCar implements IPrintCar {
+public class PrintCar {
 
-    @Override
     public void printCars(Car[] cars) {
         for (Car c : cars) {
             System.out.println("Name: "+c.getName());
@@ -13,7 +11,6 @@ public class PrintCar implements IPrintCar {
         }
     }
 
-    @Override
     public void printCar(Car car) {
         System.out.println("Car: "+ car.getName());
         System.out.println("Price: "+ car.getPrice().toString());

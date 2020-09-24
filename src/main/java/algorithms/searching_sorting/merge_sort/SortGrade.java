@@ -1,27 +1,23 @@
-package algorithms.searching_sorting.models;
+package algorithms.searching_sorting.merge_sort;
 
-import algorithms.searching_sorting.interfaces.ISortGrade;
+public class SortGrade {
 
-public class SortGrade implements ISortGrade {
-
-    @Override
     public Grade[] mergeSort(Grade[] grades, int begin, int end) {
         order(grades, begin, end);
         return grades;
     }
 
-    @Override
     public void order(Grade[] grades, int begin, int end) {
-        int count = end - begin;
-        if (count > 1){
+        int numberOfElements = end - begin;
+        if (numberOfElements > 1){
             int middle = (begin + end) / 2;
+            //System.out.println(begin+" "+middle+" "+end); // Validate orders/mergers
             order(grades, begin, middle); // order first middle (recursive)
             order(grades, middle, end); // order second middle (recursive)
             merge(grades, begin, middle, end); // merge two parts already ordered
         }
     }
 
-    @Override
     public void merge(Grade[] grades, int begin, int middle, int end) {
         Grade[] result = new Grade[end - begin];
 

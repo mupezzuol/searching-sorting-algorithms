@@ -1,11 +1,6 @@
-package algorithms.searching_sorting.sorting;
+package algorithms.searching_sorting.insertion_selection_sort;
 
-import algorithms.searching_sorting.interfaces.IPrintCar;
-import algorithms.searching_sorting.interfaces.ISortCar;
 import algorithms.searching_sorting.mock.CarMock;
-import algorithms.searching_sorting.models.Car;
-import algorithms.searching_sorting.models.PrintCar;
-import algorithms.searching_sorting.models.SortCar;
 
 public class SelectionSortMain {
 
@@ -14,8 +9,8 @@ public class SelectionSortMain {
 
 		Car cars[] = new CarMock().getMockCars();
 
-		ISortCar sortCar = new SortCar();
-		IPrintCar printCar = new PrintCar();
+		SortCar sortCar = new SortCar();
+		PrintCar printCar = new PrintCar();
 
 		cars = sortCar.selectionSort(cars, cars.length);
 		printCar.printCars(cars);

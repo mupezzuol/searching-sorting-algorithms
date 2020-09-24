@@ -1,11 +1,8 @@
 package algorithms.searching_sorting.searching;
 
-import algorithms.searching_sorting.interfaces.IPrintCar;
-import algorithms.searching_sorting.interfaces.ISearchCar;
 import algorithms.searching_sorting.mock.CarMock;
-import algorithms.searching_sorting.models.Car;
-import algorithms.searching_sorting.models.PrintCar;
-import algorithms.searching_sorting.models.SearchCar;
+import algorithms.searching_sorting.insertion_selection_sort.Car;
+import algorithms.searching_sorting.insertion_selection_sort.PrintCar;
 
 public class SearchLowestValueMain {
 	
@@ -13,9 +10,9 @@ public class SearchLowestValueMain {
 		System.out.println("------------------------- BEGIN - Finding the lowest value in an array");
 		
 		Car cars[] = new CarMock().getMockCars();
-		
-		ISearchCar searchCar = new SearchCar();
-		IPrintCar printCar = new PrintCar();
+
+		SearchCar searchCar = new SearchCar();
+		PrintCar printCar = new PrintCar();
 		
 		int cheaper = searchCar.searchLowestValue(cars, 0, cars.length-1);
 

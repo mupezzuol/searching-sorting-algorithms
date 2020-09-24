@@ -1,4 +1,4 @@
-package algorithms.searching_sorting.models;
+package algorithms.searching_sorting.insertion_selection_sort;
 
 public class Car {
 	

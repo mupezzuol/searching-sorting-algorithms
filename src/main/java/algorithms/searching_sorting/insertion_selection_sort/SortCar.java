@@ -1,13 +1,11 @@
-package algorithms.searching_sorting.models;
+package algorithms.searching_sorting.insertion_selection_sort;
 
-import algorithms.searching_sorting.interfaces.ISearchCar;
-import algorithms.searching_sorting.interfaces.ISortCar;
+import algorithms.searching_sorting.searching.SearchCar;
 
-public class SortCar implements ISortCar {
+public class SortCar {
 
-    @Override
     public Car[] selectionSort(Car[] cars, int numberOfElements) {
-        ISearchCar searchCar = new SearchCar();
+        SearchCar searchCar = new SearchCar();
 
         System.out.println();
         System.out.println("BEGIN - Running SelectionSort");
@@ -21,7 +19,6 @@ public class SortCar implements ISortCar {
         return cars;
     }
 
-    @Override
     public Car[] insertionSort(Car[] cars, int numberOfElements) {
         System.out.println();
         System.out.println("BEGIN - Running InsertionSort");
@@ -37,7 +34,6 @@ public class SortCar implements ISortCar {
         return cars;
     }
 
-    @Override
     public void changePosition(Car[] cars, int first, int second){
         System.out.println("Exchanging the " +first+ " with the " +second);
 
