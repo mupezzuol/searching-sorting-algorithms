@@ -16,7 +16,7 @@ public class GradeMock {
 				new Grade("Henrique", 9.3),
 				new Grade("Adriana", 3.0),
 				new Grade("Jorge", 9.4),
-				new Grade("Diego", 9.5)
+				new Grade("Diego", 6.8)
 		};
 		return grades;
 	}

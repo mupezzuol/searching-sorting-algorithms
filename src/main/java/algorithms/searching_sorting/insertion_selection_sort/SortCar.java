@@ -35,16 +35,16 @@ public class SortCar {
         return cars;
     }
 
-    public void changePosition(Car[] cars, int first, int second){
-        System.out.println("Exchanging the " +first+ " with the " +second);
+    public void changePosition(Car[] cars, int from, int to){
+        System.out.println("Exchanging the " +from+ " with the " +to);
 
-        Car firstCar = cars[first];
-        Car secondCar = cars[second];
+        Car carFrom = cars[from];
+        Car carTo = cars[to];
 
-        System.out.println("Exchanging the " +firstCar.getName()+ " with the " +secondCar.getName());
+        System.out.println("Exchanging the " +carFrom.getName()+ " with the " +carTo.getName());
 
-        cars[first] = secondCar;
-        cars[second] = firstCar;
+        cars[from] = carTo;
+        cars[to] = carFrom;
     }
 
 }
