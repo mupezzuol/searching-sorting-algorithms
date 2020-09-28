@@ -15,6 +15,20 @@ public class SearchCar {
 		return cheaper;
 	}
 
+	public Grade[] quickSort(Grade[] grades, int begin, int end) {
+		order(grades, begin, end);
+		return grades;
+	}
+
+	public void order(Grade[] grades, int from, int to) {
+		int elements = to - from;
+		if (elements > 1){
+			int pivotPosition = breakPivot(grades, from, to);
+			order(grades, from, pivotPosition); // Order Left on Pivot
+			order(grades, pivotPosition + 1, to); // Order Right on Pivot
+		}
+	}
+
 	public int breakPivot(Grade[] grades, int beginPosition, int endPosition) {
 		Grade pivot = grades[endPosition - 1];
 
@@ -42,5 +56,4 @@ public class SearchCar {
 		grades[to] = gradeFrom;
 		grades[from] = gradeTo;
 	}
-
 }

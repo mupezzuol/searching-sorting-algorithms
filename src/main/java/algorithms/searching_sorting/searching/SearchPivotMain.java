@@ -10,7 +10,6 @@ public class SearchPivotMain {
 		System.out.println("------------------------- BEGIN - Finding the Pivot in an array");
 		
 		Grade grades[] = new GradeMock().getMockGrades();
-		Grade mupezzuol = grades[grades.length-1];
 
 		SearchCar searchCar = new SearchCar();
 		PrintGrade printGrade = new PrintGrade();
@@ -21,8 +20,4 @@ public class SearchPivotMain {
 
 		System.out.println("------------------------- END - Finding the Pivot in an array");
 	}
-
-	private static void breakPivot(Grade[] grades) {
-	}
-
 }
