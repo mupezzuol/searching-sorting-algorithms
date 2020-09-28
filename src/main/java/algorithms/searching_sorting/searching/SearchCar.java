@@ -15,6 +15,24 @@ public class SearchCar {
 		return cheaper;
 	}
 
+	public int binarySearch(Grade[] grades, int from, int to, double seeking) {
+		System.out.println("Seeking "+seeking+" between "+from+" and "+to);
+		int middle = (from + to) / 2;
+		Grade grade = grades[middle];
+
+		if (from > to) {
+			return -1;
+		}
+		if (seeking == grade.getValue()) {
+			return middle;
+		}
+		if (seeking < grade.getValue()){
+			return binarySearch(grades, from, middle - 1, seeking); // Order Left
+		}
+
+		return binarySearch(grades, middle + 1, to, seeking);
+	}
+
 	public Grade[] quickSort(Grade[] grades, int begin, int end) {
 		order(grades, begin, end);
 		return grades;
