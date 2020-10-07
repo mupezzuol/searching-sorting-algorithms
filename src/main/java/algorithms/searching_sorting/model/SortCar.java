@@ -1,6 +1,5 @@
-package algorithms.searching_sorting.insertion_selection_sort;
+package algorithms.searching_sorting.model;
 
-import algorithms.searching_sorting.model.Car;
 import algorithms.searching_sorting.searching.SearchCar;
 
 public class SortCar {
@@ -9,12 +8,12 @@ public class SortCar {
         SearchCar searchCar = new SearchCar();
 
         System.out.println();
-        System.out.println("BEGIN - Running SelectionSort");
+        System.out.println("BEGIN - Running Selection Sort");
         for (int current = 0; current < numberOfElements - 1; current++) {
             int lowestValue = searchCar.searchLowestValue(cars, current, numberOfElements - 1);
             changePosition(cars, current, lowestValue);
         }
-        System.out.println("END - Running SelectionSort");
+        System.out.println("END - Running Selection Sort");
         System.out.println();
 
         return cars;
@@ -22,7 +21,7 @@ public class SortCar {
 
     public Car[] insertionSort(Car[] cars, int numberOfElements) {
         System.out.println();
-        System.out.println("BEGIN - Running InsertionSort");
+        System.out.println("BEGIN - Running Insertion Sort");
         for(int current = 1; current < numberOfElements; current++){
             int analyze = current;
             while (analyze > 0 && cars[analyze].getPrice() < cars[analyze-1].getPrice()){
@@ -30,7 +29,7 @@ public class SortCar {
                 analyze--;
             }
         }
-        System.out.println("END - Running InsertionSort");
+        System.out.println("END - Running Insertion Sort");
         System.out.println();
         return cars;
     }

@@ -3,6 +3,8 @@ package algorithms.searching_sorting.insertion_selection_sort;
 import static org.junit.Assert.assertEquals;
 
 import algorithms.searching_sorting.model.Car;
+import algorithms.searching_sorting.model.SortCar;
+
 import org.junit.Before;
 import org.junit.Test;
 

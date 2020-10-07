@@ -8,7 +8,7 @@ import algorithms.searching_sorting.searching.SearchCar;
 public class QuickSortMain {
 	
 	public static void main(String[] args) {
-		System.out.println("------------------------- BEGIN - QuickSort using Pivot");
+		System.out.println("------------------------- BEGIN - Quick Sort using Pivot");
 		
 		Grade grades[] = new GradeMock().getMockGrades();
 
@@ -19,6 +19,6 @@ public class QuickSortMain {
 
 		printGrade.printGrades(grades);
 
-		System.out.println("------------------------- END - QuickSort using Pivot");
+		System.out.println("------------------------- END - Quick Sort using Pivot");
 	}
 }

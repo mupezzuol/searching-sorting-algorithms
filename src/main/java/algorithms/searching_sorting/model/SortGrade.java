@@ -1,6 +1,4 @@
-package algorithms.searching_sorting.merge_sort;
-
-import algorithms.searching_sorting.model.Grade;
+package algorithms.searching_sorting.model;
 
 public class SortGrade {
 

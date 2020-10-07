@@ -4,7 +4,7 @@ import algorithms.searching_sorting.mock.GradeMock;
 import algorithms.searching_sorting.model.Grade;
 import algorithms.searching_sorting.print.PrintGrade;
 
-public class BinarySearching {
+public class BinarySearchMain {
 
     public static void main(String[] args) {
         System.out.println("------------------------- BEGIN - Binary Searching");
