@@ -256,10 +256,6 @@ public int breakPivot(Grade[] grades, int beginPosition, int endPosition) {
 
 ![Linear and Quadratic](resources/img/linear-quadratic.png)
 
-- Example with few elements to visualize the lines of the linear algorithm.
-
-![Linear and Quadratic - Basic](resources/img/linear-quadratic-basic.png)
-
 #### Merge Sort - Quick Sort (Logarithm)
 
 - MergeSort and QuickSort are of equal size, what should be analyzed are the smallest details, but analysts say that on average QuickSort is faster. Remembering that QuickSort uses Pivot for its algorithm.
