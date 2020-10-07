@@ -27,6 +27,47 @@ public int searchLowestValue(Car[] cars, int beginPosition, int endPosition) {
 }
 ```
 
+#### Pivot Search 
+
+- ....
+
+```java
+public int breakPivot(Grade[] grades, int beginPosition, int endPosition) {
+    Grade pivot = grades[endPosition - 1];
+    int minorFound = 0;
+    for (int analyze = 0; analyze < endPosition - 1; analyze++) {
+        Grade gradeCurrent = grades[analyze];
+        if (gradeCurrent.getValue() <= pivot.getValue()) {
+            changePosition(grades, analyze, minorFound);
+            minorFound++;
+        }
+    }
+    changePosition(grades, endPosition - 1, minorFound);
+    return minorFound;
+}
+```
+
+#### Binary Search 
+
+- ....
+
+```java
+public int binarySearch(Grade[] grades, int from, int to, double seeking) {
+    int middle = (from + to) / 2;
+    Grade grade = grades[middle];
+    if (from > to) {
+        return -1;
+    }
+    if (seeking == grade.getValue()) {
+        return middle;
+    }
+    if (seeking < grade.getValue()){
+        return binarySearch(grades, from, middle - 1, seeking); // Order Left
+    }
+    return binarySearch(grades, middle + 1, to, seeking);
+}
+```
+
 #### Change Position
 
 - Algorithm used to change the position of the array values.
@@ -138,6 +179,39 @@ public void merge(Grade[] grades, int begin, int middle, int end) {
 }
 ```
 
+#### Quick Sort
+
+- ...
+
+```java
+public Grade[] quickSort(Grade[] grades, int begin, int end) {
+    order(grades, begin, end);
+    return grades;
+}
+
+public void order(Grade[] grades, int from, int to) {
+    int elements = to - from;
+    if (elements > 1){
+        int pivotPosition = breakPivot(grades, from, to);
+        order(grades, from, pivotPosition); // Order Left on Pivot
+        order(grades, pivotPosition + 1, to); // Order Right on Pivot
+    }
+}
+public int breakPivot(Grade[] grades, int beginPosition, int endPosition) {
+    Grade pivot = grades[endPosition - 1];
+    int minorFound = 0;
+    for (int analyze = 0; analyze < endPosition - 1; analyze++) {
+        Grade gradeCurrent = grades[analyze];
+        if (gradeCurrent.getValue() <= pivot.getValue()) {
+            changePosition(grades, analyze, minorFound);
+            minorFound++;
+        }
+    }
+    changePosition(grades, endPosition - 1, minorFound);
+    return minorFound;
+}
+```
+
 ## Tests <a name="tests"></a>:white_check_mark:
 
 - in progress...
@@ -180,6 +254,12 @@ public void merge(Grade[] grades, int begin, int middle, int end) {
 
 ![Linear and Quadratic - Basic](resources/img/linear-quadratic-basic.png)
 
+#### Merge Sort - Quick Sort (Logarithm)
+
+- MergeSort and QuickSort are of equal size, what should be analyzed are the smallest details, but analysts say that on average QuickSort is faster. Remembering that QuickSort uses Pivot for its algorithm.
+
+![Merge and Quick Sort](resources/img/merge-quick-sort.png)
+
 #### Comparisons and Illustration/Demonstration
 
 - We use the letter <kbd>O</kbd> to demonstrate the complexity of an algorithm, we call this analysis _`Asymptotic Analysis`_.
@@ -191,6 +271,7 @@ Demonstration examples:
 - `O n²` -> Quadratic
 - `O n³` -> Cubic
 - `O 2ⁿ` -> Exponential
+- `O (log₂ n)` -> Logarithm (divide and conquer)
 
 - Below are some examples of complexity of algorithms and their analysis in operations.
 
