@@ -229,6 +229,12 @@ public int breakPivot(Grade[] grades, int beginPosition, int endPosition) {
 
 ![Search Lowest Value](resources/img/search-lowest-value.png)
 
+#### Binary Search - Logarithm
+
+- ....
+
+![Binary Search](resources/img/binary-search.png)
+
 #### Selection Sort - Quadratic
 
 - In this algorithm, we execute a 'for' that scans N elements, however, we have a call to another algorithm (search lowest value) where it can also have the same complexity already analyzed. So in this case we have N elements raised to 2 and we can have twice that.
