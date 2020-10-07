@@ -26,7 +26,6 @@ public class SortGrade {
         int currentPointer = 0;
 
         while (current1 < middle && current2 < end) {
-
             Grade grade1 = grades[current1];
             Grade grade2 = grades[current2];
 

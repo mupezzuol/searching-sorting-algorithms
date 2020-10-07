@@ -32,11 +32,11 @@ public int searchLowestValue(Car[] cars, int beginPosition, int endPosition) {
 - Algorithm used to change the position of the array values.
 
 ```java
-public void changePosition(Car[] cars, int first, int second){
-    Car firstCar = cars[first];
-    Car secondCar = cars[second];
-    cars[first] = secondCar;
-    cars[second] = firstCar;
+public void changePosition(Car[] cars, int from, int to) {
+    Car carFrom = cars[from];
+    Car carTo = cars[to];
+    cars[from] = carTo;
+    cars[to] = carFrom;
 }
 ```
 
@@ -50,7 +50,7 @@ public void changePosition(Car[] cars, int first, int second){
 
 ```java
 public Car[] selectionSort(Car[] cars, int numberOfElements) {
-    ISearchCar searchCar = new SearchCar();
+    SearchCar searchCar = new SearchCar();
     for (int current = 0; current < numberOfElements - 1; current++) {
         int lowestValue = searchCar.searchLowestValue(cars, current, numberOfElements - 1);
         changePosition(cars, current, lowestValue);
@@ -81,16 +81,14 @@ public Car[] insertionSort(Car[] cars, int numberOfElements) {
 - We take the complete array and divide it into two parts, and keep dividing them until we can no longer do them, we do the comparisons in blocks and in the end we compare the two divided blocks.
 
 ```java
-@Override
 public Grade[] mergeSort(Grade[] grades, int begin, int end) {
     order(grades, begin, end);
     return grades;
 }
 
-@Override
 public void order(Grade[] grades, int begin, int end) {
-    int count = end - begin;
-    if (count > 1){
+    int numberOfElements = end - begin;
+    if (numberOfElements > 1){
         int middle = (begin + end) / 2;
         order(grades, begin, middle); // order first middle (recursive)
         order(grades, middle, end); // order second middle (recursive)
@@ -98,7 +96,6 @@ public void order(Grade[] grades, int begin, int end) {
     }
 }
 
-@Override
 public void merge(Grade[] grades, int begin, int middle, int end) {
     Grade[] result = new Grade[end - begin];
 
@@ -107,7 +104,6 @@ public void merge(Grade[] grades, int begin, int middle, int end) {
     int currentPointer = 0;
 
     while (current1 < middle && current2 < end) {
-
         Grade grade1 = grades[current1];
         Grade grade2 = grades[current2];
 
