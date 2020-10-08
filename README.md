@@ -29,7 +29,7 @@ public int searchLowestValue(Car[] cars, int beginPosition, int endPosition) {
 
 #### Pivot Search 
 
-- ....
+- I choose the last value to place it as Pivot in the array, checking to find its position.
 
 ```java
 public int breakPivot(Grade[] grades, int beginPosition, int endPosition) {
@@ -49,7 +49,7 @@ public int breakPivot(Grade[] grades, int beginPosition, int endPosition) {
 
 #### Binary Search 
 
-- ....
+- My array is already ordered, knowing this I divide my array into two parts and choose only one side to continue with the search, I keep dividing and choose one side until there is 1. This is called `divide and conquer.`
 
 ```java
 public int binarySearch(Grade[] grades, int from, int to, double seeking) {
@@ -181,7 +181,7 @@ public void merge(Grade[] grades, int begin, int middle, int end) {
 
 #### Quick Sort
 
-- ...
+- It is the same rule as MergeSort, but here we use Pivot to make this division.
 
 ```java
 public Grade[] quickSort(Grade[] grades, int begin, int end) {
@@ -231,7 +231,7 @@ public int breakPivot(Grade[] grades, int beginPosition, int endPosition) {
 
 #### Binary Search - Logarithm
 
-- ....
+- The difference in the algorithm is huge, as BinarySearch makes a binary choice of "left side" or "right side" when the Pivot break is made, however, the operations necessary to find the value will always be broken.
 
 ![Binary Search](resources/img/binary-search.png)
 
