@@ -11,7 +11,7 @@ public class BinarySearchMain {
 
         Grade grades[] = new GradeMock().getMockGrades();
 
-        SearchCar searchCar = new SearchCar();
+        Search searchCar = new Search();
         PrintGrade printGrade = new PrintGrade();
 
         grades = searchCar.quickSort(grades, 0, grades.length);

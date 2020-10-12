@@ -3,7 +3,7 @@ package algorithms.searching_sorting.searching;
 import algorithms.searching_sorting.model.Car;
 import algorithms.searching_sorting.model.Grade;
 
-public class SearchCar {
+public class Search {
 
 	public int searchLowestValue(Car[] cars, int beginPosition, int endPosition) {
 		int cheaper = beginPosition;

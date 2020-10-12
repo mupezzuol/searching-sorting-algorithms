@@ -3,7 +3,7 @@ package algorithms.searching_sorting.quick_sort;
 import algorithms.searching_sorting.mock.GradeMock;
 import algorithms.searching_sorting.model.Grade;
 import algorithms.searching_sorting.print.PrintGrade;
-import algorithms.searching_sorting.searching.SearchCar;
+import algorithms.searching_sorting.searching.Search;
 
 public class QuickSortMain {
 	
@@ -12,7 +12,7 @@ public class QuickSortMain {
 		
 		Grade grades[] = new GradeMock().getMockGrades();
 
-		SearchCar searchCar = new SearchCar();
+		Search searchCar = new Search();
 		PrintGrade printGrade = new PrintGrade();
 
 		grades = searchCar.quickSort(grades, 0, grades.length);

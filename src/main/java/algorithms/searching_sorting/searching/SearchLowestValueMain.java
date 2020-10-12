@@ -11,7 +11,7 @@ public class SearchLowestValueMain {
 		
 		Car cars[] = new CarMock().getMockCars();
 
-		SearchCar searchCar = new SearchCar();
+		Search searchCar = new Search();
 		PrintCar printCar = new PrintCar();
 		
 		int cheaper = searchCar.searchLowestValue(cars, 0, cars.length-1);

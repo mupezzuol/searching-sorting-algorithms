@@ -11,7 +11,7 @@ public class SearchPivotMain {
 		
 		Grade grades[] = new GradeMock().getMockGrades();
 
-		SearchCar searchCar = new SearchCar();
+		Search searchCar = new Search();
 		PrintGrade printGrade = new PrintGrade();
 
 		int pivotPosition = searchCar.breakPivot(grades, 0, grades.length);

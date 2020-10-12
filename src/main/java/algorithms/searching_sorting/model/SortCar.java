@@ -1,11 +1,11 @@
 package algorithms.searching_sorting.model;
 
-import algorithms.searching_sorting.searching.SearchCar;
+import algorithms.searching_sorting.searching.Search;
 
 public class SortCar {
 
     public Car[] selectionSort(Car[] cars, int numberOfElements) {
-        SearchCar searchCar = new SearchCar();
+        Search searchCar = new Search();
 
         System.out.println();
         System.out.println("BEGIN - Running Selection Sort");
