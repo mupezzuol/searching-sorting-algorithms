@@ -5,12 +5,12 @@ import algorithms.searching_sorting.searching.Search;
 public class SortCar {
 
     public Car[] selectionSort(Car[] cars, int numberOfElements) {
-        Search searchCar = new Search();
+        Search search = new Search();
 
         System.out.println();
         System.out.println("BEGIN - Running Selection Sort");
         for (int current = 0; current < numberOfElements - 1; current++) {
-            int lowestValue = searchCar.searchLowestValue(cars, current, numberOfElements - 1);
+            int lowestValue = search.searchLowestValue(cars, current, numberOfElements - 1);
             changePosition(cars, current, lowestValue);
         }
         System.out.println("END - Running Selection Sort");

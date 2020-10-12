@@ -11,13 +11,13 @@ public class BinarySearchMain {
 
         Grade grades[] = new GradeMock().getMockGrades();
 
-        Search searchCar = new Search();
+        Search search = new Search();
         PrintGrade printGrade = new PrintGrade();
 
-        grades = searchCar.quickSort(grades, 0, grades.length);
+        grades = search.quickSort(grades, 0, grades.length);
 
         double value = 9.3;
-        int positionFound = searchCar.binarySearch(grades, 0, grades.length, value);
+        int positionFound = search.binarySearch(grades, 0, grades.length, value);
 
         if (positionFound >= 0) {
             System.out.println("The "+value+" value is in the "+positionFound+" position");

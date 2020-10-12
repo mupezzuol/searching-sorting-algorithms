@@ -12,10 +12,10 @@ public class QuickSortMain {
 		
 		Grade grades[] = new GradeMock().getMockGrades();
 
-		Search searchCar = new Search();
+		Search search = new Search();
 		PrintGrade printGrade = new PrintGrade();
 
-		grades = searchCar.quickSort(grades, 0, grades.length);
+		grades = search.quickSort(grades, 0, grades.length);
 
 		printGrade.printGrades(grades);
 
